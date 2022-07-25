@@ -5,9 +5,9 @@ while [ $x -le 20 ]
 do
 	echo $x
 	case $x in
-	 4) echo "bad luck from china"
+	 4) echo "bad luck from China"
 	;;
-	 9) echo "bad luck from japan"
+	 9) echo "bad luck from Japan"
 	;;
 	 17) echo "bad luck from Italy"
 	;;
