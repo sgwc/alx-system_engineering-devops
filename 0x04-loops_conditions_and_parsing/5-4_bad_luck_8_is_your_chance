@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#This scripts displays "bad luck" for the 4th loop, "good luck" 
+#for the 8th loop and "Best school" for the other iteration til
+#10 times
+n=1
+while [ $n -le 10 ]
+do
+	if [ $n -eq 4 ] 
+	then
+		echo "bad luck"
+	elif [ $n -eq 8 ] 
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	n=$(( n + 1 ))
+done
