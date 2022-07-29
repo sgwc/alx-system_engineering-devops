@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Bash script that configures an Ubuntu server
+# with the below requirements
+cp /etc/hosts ~/hosts.new
+sudo cp -f /etc/hosts ~/hosts.new
+sudo sed -i 's/.*[0-9]*localhost/127.0.0.2\tlocalhost/' ~/hosts.new
+sudo sed -i '/.*[0-9]*facebook.com/d' ~/hosts.new
+sudo sed -i '$ a 8.8.8.8\tfacebook.com' ~/hosts.new
+sudo cp -f ~/hosts.new /etc/hosts
